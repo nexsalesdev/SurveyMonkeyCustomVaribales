@@ -17,8 +17,9 @@ function getQueryParams(qs) {
     if(iFram.length > 0){
       var urlT = iFram[0].getAttribute('src');
       if(urlT.indexOf('?') == -1){
-        var query = getQueryParams(window.location.search);
-        iFram[0].setAttribute('src',urlT+'?fname='+query.fname+'&lname='+query.lname);
+        //var query = getQueryParams(window.location.search);
+        //iFram[0].setAttribute('src',urlT+'?fname='+query.fname+'&lname='+query.lname);
+        iFram[0].setAttribute('src',urlT+window.location.search)
         clearInterval(myVarTimer)
       }
     }
