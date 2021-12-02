@@ -1,4 +1,4 @@
-function getQueryParams(qs) {
+/*function getQueryParams(qs) {
       qs = qs.split('+').join(' ');
 
       var params = {},
@@ -10,7 +10,7 @@ function getQueryParams(qs) {
       }
       return params;
   }
-
+*/
   
   function myTime(){
     var iFram = document.querySelectorAll('iframe[src*="surveymonkey"]');
